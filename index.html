@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vue local image</title>
+</head>
+<body>
+	<div id="x">
+
+		<image-component></image-component>
+		<image-component></image-component>
+
+	</div>
+
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+		<script>
+			
+			const app=Vue.createApp({})
+
+			//IMAGE COMPONENT
+
+			app.component("image-component",{
+
+				template:`
+
+					<h1>car auto mobile</h1>car
+					<img 
+					src="images/cr7.png"
+					width="300"
+
+					alt="car logo">
+					</div>	
+
+							`
+			})
+
+			app.mount("#x")
+		</script>
+
+
+</body>
+</html>
